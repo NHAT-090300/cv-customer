@@ -1,0 +1,650 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin:0;
+    padding:0;
+    font-size:16px;
+}
+/* navigation */
+.container_1 nav{
+    display:flex;
+    position:fixed;
+    font-weight: solid ;
+    width:100%;
+    margin:0 auto;
+    
+}
+
+.nav{
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    z-index: 3;
+}
+.hidden{
+    background-color: #333;
+}
+.nav ul{
+    display: flex;
+    justify-content:center;
+    margin: 1% 20%;
+    letter-spacing: 2px;
+    font-size: small;
+}
+.nav ul li{
+    list-style: none;
+    text-align: center;
+    margin-right: 5%;
+
+}
+.nav ul li:hover a{
+    color:#F06000;
+    transition: 0.5s ease-out;
+}
+.active{
+    color:#F06000;
+}
+li{
+    list-style:none;
+}
+a{
+    font-family: sans-serif;
+    font-size: smaller;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: 0.5s ease-out;
+}
+.info{
+    margin-top: 15%;
+}
+.info b{
+    color: white;
+}
+
+.info h1{
+    color: white;
+    text-transform: capitalize;
+    font-size:xx-large;
+    text-shadow: 0px 1px 3px rgba(0,0,0,.8);
+    font: 95px 'opensans-bold', sans-serif;
+    letter-spacing:-2px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.info p{
+    color: #A8A8A8;
+    line-height: 31px;
+    text-align: center;
+    font-size: 18px;
+    margin:0 auto;
+    width: 44%;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+/* background-image */
+.header {
+    height:740px;
+    background-image:  url('../img/header-background.jpg') ;
+    background-color: #161415; 
+    width:100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:local; 
+  }
+
+  /* icon */
+.icon{
+    font-size:30px;
+}
+
+.icon ul{
+    display:flex;
+    justify-content:center;
+    padding: auto;
+    height: 70px;
+    margin-top:0px;
+}
+.icon ul li{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+ 
+.icon ul li a{
+    text-decoration: none;
+    font-size: 100%;
+}
+.icon ul li a i{
+    text-decoration: none;
+    font-size: 100%;
+    transition: 0.5s ease-out;
+}
+.hr_1{ 
+    position: relative;
+    left: 30%;
+    width: 40%;
+    border-color:rgba(150, 150, 150, .1);
+    margin: 15px;
+}
+/* hover a */
+.icon ul li a:hover i{
+    color:#11ABB0;
+    transition:0.5s;
+}
+
+/* down */
+.down{
+    margin-top: 9%;
+    position: relative;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    font-size:50px;
+    transition: all 0.5s ease-out;
+}
+.down a:hover{
+    color:white;
+    transition:all 0.5s;
+}
+.down a:hover{
+    color:#11ABB0;
+    transition: all 0.5s ease-out;
+}
+
+/* about me */
+.row{
+    background-color:#2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.about_me{
+    display:flex;
+    flex-direction:row;
+    margin-top:0px;
+    background-color:#2B2B2B;
+    padding-bottom: 66px;
+    overflow: hidden;
+    width:96%;
+    max-width:1020px;
+    margin: 0 auto;
+}
+
+
+.about_me div img{
+    width:150px;
+    height: 150px;
+    border-radius:50%;
+}
+
+.content{
+    margin-left: 10%;
+}
+
+.content h2{
+    text-transform:capitalize;
+    color:white;
+    margin:0;
+}
+.content p{
+    color:#838C95;
+    line-height: 30px;
+}
+
+.contact{
+    display:flex;
+    padding: 0;
+}
+.number{
+    width:41%;
+    text-align: none;
+}
+.buttom{
+    margin-bottom:20%;
+    font-size: 30px;
+    text-align:center;
+}
+.buttom a{
+    font-size:15px;
+    position: relative;
+    padding:17px;
+    top:50%;
+    background-color: #444;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+
+.buttom a:hover{
+    color:  #444;
+    background-color: #fff;  
+    transition: 0.5s ease-out;
+}
+.buttom a:focus,
+.buttom a:focus i{
+    color:#11ABB0;
+}
+
+.buttom a i{
+    margin-right: 10px;
+    color:#fff;
+}
+/* education */
+.edu{
+    background: #fff;
+    width:100%;
+}
+.content_2{
+    
+    display:flex;
+    flex-direction:row;
+    margin-top: 43px;
+    background-color:white;
+    padding-bottom: 23px;
+    overflow: hidden;
+    width:96%;
+    max-width:1020px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+.content_2 div h3{
+    font-weight: 62px;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    line-height: 5px;
+    border-bottom:3px solid #11ABB0;
+    padding: 15px 1px;
+}
+.learn_1{
+    margin-left: 14%;
+    margin-right: 9%;
+}
+.learn_2{
+    margin-left: 20%;
+    margin-right: 9%;
+}
+.learn_3{
+    margin-left: 20%;
+    margin-right: 9%;
+}
+hr{
+    margin:0 14%;
+    color:rgba(150, 150, 150, 0.1);
+    opacity: 0.1;
+}
+p{
+    color:#838C95;
+    font-size: 16px;
+    line-height: 34px;
+}
+.des i,
+.uni i{
+    color:#838C95;
+}
+.uni h2,
+.des h2{
+    margin-bottom: 5px;
+}
+
+h4{
+    text-transform: uppercase;
+    font: 15px 'opensans-bold', 'sans-serif';
+    letter-spacing:2px;
+}
+.portfolio{
+    background-color:#ebeeee;
+    margin-top: 90px;
+    padding-bottom:90px;
+}
+.row_1{
+    padding-top:6%;
+    text-align:center;
+}
+figcaption{
+    height:215px;
+}
+.gr-img{
+    padding: 0 13%;
+    display:flex;
+    justify-content: space-around;
+    line-height:107px;
+}
+.gr-img img{
+    width: 220px;
+    height: 215px;
+}
+.fa-plus{
+    margin-top: 35%;
+    font-size:40px;
+}
+.ing_text{
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:-15%;
+    left:1%;
+}
+.ing_text h5{
+    color: #fff;
+    height: 20px;
+    margin: 0;
+}
+.ing_text span{
+    font-size:13px;
+    color: #fff;
+    margin-top:30px;
+}
+.row_1 h2{
+    font: 15px 'opensans-semibold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing:1px    /* flex-wrap: wrap; */;
+    color:#95A3A3;
+    margin-bottom: 48px;
+}
+/* world */
+.content_3{
+    display:flex;
+    padding:5% 19%;
+    background-color: #212121;
+}
+.earth{
+    margin-right: 10%;
+
+}
+.earth i{
+    font-size: 72px;
+    color:#fff;
+
+}
+
+.text_3{
+    color: #fff;
+    font-size:17px;
+    font-weight: 600;
+    font-family: 'opensans-semibold', sans-serif;
+}
+.text_3 h2{
+    margin-top: 0px;
+}
+.text_3 p{
+    color: #fff;
+    font-size: 17px;
+    line-height: 30px;
+    padding-right: 29%;
+    position: relative;
+}
+
+.slider_2{
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-image:url("../img/testimonials-bg.jpg") ;
+    background-color: #161415; 
+    background-size: cover;
+    transition: 0.3s;
+}
+.slider_2:hover{
+    opacity: 0.9;
+}
+.quote{
+
+    padding: 7% 20%;
+    position: relative;
+    width:100%;
+    height: 500px;
+    display:flex;
+}
+.quote i{
+    margin-top: 20px;;
+    padding-right: 45px;
+    font-size:72px;
+    color:white;
+}
+.quote p{
+    font-size:24px;
+    font-family: 'librebaskerville-italic';
+    color:#fff;
+    line-height: 48px;
+    
+}
+.contact_2{
+    display:flex;
+    padding:5% 15%;
+    background: #212121;
+}
+.envolope{
+    margin: 0;
+    margin-right:5%;
+}
+.envolope i{
+    font-size:72px;
+    color:#fff;
+}
+.text_4 p{
+    font-size:20px;
+    margin:0;
+}
+.footer{
+    height:200px;
+}
+.footer div a{
+    font-size:50px;
+}
+
+@media (max-width:1200px){
+    .gr-img{
+        padding: 0 3%;   
+        line-height:50px;
+    }
+    .ing_text{
+        margin:0;
+        padding:0;
+        position: absolute;
+        top:-8%;
+        left:1%;
+    }
+}
+
+@media  (max-width:768px){
+    .nav{
+        z-index: -1; 
+    }
+    .info h1{
+        font-size:45px;
+
+    }
+    .info p{
+        font-size:20px;
+        padding:0%;
+        width: 70%;
+    }
+    .icon{
+        font-size:25px;
+        padding: 0 20%;
+    }
+    .down{
+        z-index: -1;
+    }
+    .row{
+        padding-top:0;
+    }
+    .content{
+        margin:  0 5%;
+    }
+    .content div h3{
+        width:0;
+    }
+    .about_me{
+        display:block;
+    }
+    .about_me div img{
+        position:absolute;
+        z-index: -1;
+    }
+    .contact{
+        display:block;
+    }
+    .number {
+        width:63%;
+    }
+    .buttom{
+        width:100%;
+
+    }
+    .content_2{
+        display:block;
+        text-align: center;
+    }
+    .learn_3,
+    .learn_2,
+    .learn_1{
+        margin:0 5%;
+    }
+    .bar-expand ul li{
+        text-align:left;
+    }
+
+    .gr-img{
+        display: inline;
+        padding: 0;   
+        line-height:50px;
+    }
+
+    figcaption{
+        height:400px;
+    }
+    .gr-img div img{
+        width:400px;
+        height: 400px;
+    }
+    .content_3{
+        display:block;
+        padding: 0;
+        text-align: center;
+    }
+    .earth{
+        position: absolute;
+        z-index: -1;
+    }
+    .text_3 p{
+        margin: 0 5%;
+        text-align: center;
+        padding: 0;
+    }
+    .quote{
+        padding:0 5%;
+        padding-top: 50px;
+    }
+    .quote div i{
+        position:absolute;
+        z-index: -1;
+    }
+    .quote div div{
+        text-align: center;
+    }
+    .contact_2{
+        display:flex;
+        padding:20% 5%;
+    }
+    .envolope i{
+        position:absolute;
+        z-index: -1;
+    }
+    .text_4{
+        text-align:center;
+    } 
+    .contact_2{
+        display: block;
+    }
+    .footer{
+        height:100px;
+    }
+    .footer div a{
+        font-size:25px;
+    }
+    .fa-quote-left{
+        display:none;
+    }
+    .ing_text{
+        margin:0;
+        padding:0;
+        position: absolute;
+        font-size: 18px;
+        top:0%;
+        left:1%;
+    }
+}
+@media (max-width:480px){
+    h2,h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .text_4 p{
+        font-size:14px;
+    }
+    .nav{
+        z-index: -1; 
+    }
+    .info h1{
+        font-size:25px;
+    }
+    .info p{
+        font-size:14px;
+    }
+    .quote div p{
+        font-size:20px;
+    }
+    .footer{
+        height: 50px;
+    }
+    .header{
+        height:400px;
+    }
+    .fa-quote-left{
+        display:none;
+    }
+    .text-footer{
+        font-size: 12px;
+    }
+
+    .buttom a{
+        font-size:10px;
+    }
+    .icon{
+        font-size:16px;
+        padding: 0 20%;
+    }
+    figcaption{
+        height:215px;
+    }
+    .gr-img div img{
+        height: 215px;
+        width: 220px;
+    }
+
+    .ing_text{
+        margin:0;
+        padding:0;
+        position: absolute;
+        top:-8%;
+        left:1%;
+    }
+}
+
